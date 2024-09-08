@@ -5,6 +5,11 @@
 #include "subsystems/SubElevator.h"
 #include <frc/smartdashboard/SmartDashboard.h>
 #include <utilities/ICSparkMax.h>
+#include <frc/simulation/ElevatorSim.h>
+#include <frc/RobotController.h>
+#include <numbers>
+
+
 
 SubElevator::SubElevator() {
     _elevatorMotor.SetConversionFactor(1.0/GEARING);
@@ -18,11 +23,11 @@ void SubElevator::Periodic() {
 }
 
 
-frc2::CommandPtr SubElevator::UpTo(units::degree_t angle) {
+frc2::CommandPtr SubElevator::GoTo(units::angle::turn_t rotations) {
     return RunOnce(
-        [this, angle]
+        [this, rotations]
         {
-            _elevatorMotor.SetPositionTarget(angle);
+            _elevatorMotor.SetPositionTarget(rotations);
         }
     );
 }
@@ -33,10 +38,18 @@ void SubElevator::SimulationPeriodic() {
 
     _elevatorSim.Update(20_ms);
 
-    _elevatorSim.(_elevatorSim.GetAngularPosition(), _elevatorSim.GetAngularVelocity());
+    _elevatorMotor.UpdateSimEncoder(converter(_elevatorSim.GetPosition()), convert2(_elevatorSim.GetVelocity(), radius));
       // this needs to be fixed !!
 }
 
 bool SubElevator::AtTarget() {
-    return units::math::abs(_elevatorMotor.GetPosError()) < 1_deg;
+    return units::math::abs(_elevatorMotor.GetPosError()) < 1_tr;
+}
+
+units::angle::turn_t SubElevator::converter(units::meter_t height) {
+    return (height/62.8318531).value()*1_tr;
+}
+
+units::radians_per_second_t SubElevator::convert2(units::meters_per_second_t mps, units::centimeter_t radius) {
+    return mps/radius;
 }

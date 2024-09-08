@@ -13,6 +13,8 @@
 #include <frc/system/plant/DCMotor.h>
 #include <units/angle.h>
 #include <units/moment_of_inertia.h>
+#include <frc/simulation/ElevatorSim.h>
+
 
 class SubElevator : public frc2::SubsystemBase {
  public:
@@ -25,8 +27,9 @@ class SubElevator : public frc2::SubsystemBase {
   void Periodic() override;
   void SimulationPeriodic() override;
   bool AtTarget();
-
-  frc2::CommandPtr UpTo(units::degree_t angle);
+  units::angle::turn_t converter(units::meter_t height);
+  units::radians_per_second_t convert2(units::meters_per_second_t mps, units::centimeter_t radius);
+  frc2::CommandPtr GoTo(units::angle::turn_t rotations);
 
  private:
   // Components (e.g. motor controllers and sensors) should generally be
@@ -36,9 +39,13 @@ class SubElevator : public frc2::SubsystemBase {
 
   // constants
   static constexpr double GEARING = 20;
-  static constexpr inline auto MOI = 0.005_kg_sq_m;
+  static constexpr units::meter_t circumference = 62.831531_m;
+  static constexpr units::centimeter_t radius = 10_cm;
+  static constexpr units::meter_t maxHeight = 1_m;
+  static constexpr units::meter_t minHeight = 0_m;
 
   // Simulation
-  frc::sim::ElevatorSim _elevatorSim{frc::DCMotor::NEO(), GEARING, MOI};
+
+  frc::sim::ElevatorSim _elevatorSim{frc::DCMotor::NEO(), GEARING, 5_kg, radius, minHeight, maxHeight, false, 0.5_m};
   // this needs to be fixed !!
 };

@@ -9,6 +9,7 @@
 #include "subsystems/SubShooter.h"
 #include "subsystems/SubFeeder.h"
 #include "subsystems/SubTurret.h"
+#include "subsystems/SubElevator.h"
 
 #include "commands/ShootingCommands.h"
 
@@ -21,8 +22,12 @@ void RobotContainer::ConfigureBindings() {
 
   _controller.X().OnTrue(SubTurret::GetInstance().TurnTo(30_deg));
   _controller.Y().OnTrue(SubTurret::GetInstance().TurnTo(0_deg));
+  _controller.B().OnTrue(SubElevator::GetInstance().GoTo(30_tr));
 }
 
 frc2::CommandPtr RobotContainer::GetAutonomousCommand() {
   return frc2::cmd::Print("No autonomous command configured");
 }
+
+
+
