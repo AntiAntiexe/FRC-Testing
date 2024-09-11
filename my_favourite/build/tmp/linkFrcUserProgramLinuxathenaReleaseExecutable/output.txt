@@ -1,4 +1,0 @@
-See file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
-linking frcUserProgram successful.
-
-Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.

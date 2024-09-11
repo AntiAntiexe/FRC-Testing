@@ -1,2 +1,0 @@
-See file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramTestOsxuniversalReleaseGoogleTestExeFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramTestOsxuniversalReleaseGoogleTestExeFrcUserProgramCpp.
-Finished compileFrcUserProgramTestOsxuniversalReleaseGoogleTestExeFrcUserProgramCpp, see full log file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramTestOsxuniversalReleaseGoogleTestExeFrcUserProgramCpp/output.txt.
