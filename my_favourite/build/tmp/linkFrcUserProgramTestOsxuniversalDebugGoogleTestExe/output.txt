@@ -1,0 +1,4 @@
+See file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramTestOsxuniversalDebugGoogleTestExe/output.txt for all output for linkFrcUserProgramTestOsxuniversalDebugGoogleTestExe.
+linking frcUserProgramTest successful.
+
+Finished linkFrcUserProgramTestOsxuniversalDebugGoogleTestExe, see full log file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramTestOsxuniversalDebugGoogleTestExe/output.txt.

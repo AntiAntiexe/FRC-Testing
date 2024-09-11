@@ -1,0 +1,4 @@
+See file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramOsxuniversalDebugExecutable/output.txt for all output for linkFrcUserProgramOsxuniversalDebugExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramOsxuniversalDebugExecutable, see full log file:///Users/home/FRCProjects/frctest/build/tmp/linkFrcUserProgramOsxuniversalDebugExecutable/output.txt.

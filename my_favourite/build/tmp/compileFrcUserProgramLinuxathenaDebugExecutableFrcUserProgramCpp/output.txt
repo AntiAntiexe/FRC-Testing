@@ -1,0 +1,22 @@
+See file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp.
+compiling SubIntake.cpp failed.
+/Users/home/FRCProjects/frctest/src/main/cpp/subsystems/SubIntake.cpp:5:10: fatal error: subsystems/SubRoller.h: No such file or directory
+    5 | #include "subsystems/SubRoller.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ShootingCommands.cpp failed.
+/Users/home/FRCProjects/frctest/src/main/cpp/commands/ShootingCommands.cpp:6:10: fatal error: subsystems/SubRoller.h: No such file or directory
+    6 | #include "subsystems/SubRoller.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling RobotContainer.cpp failed.
+/Users/home/FRCProjects/frctest/src/main/cpp/RobotContainer.cpp:12:10: fatal error: subsystems/SubRoller.h: No such file or directory
+   12 | #include "subsystems/SubRoller.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling SubFeeder.cpp successful.
+
+Finished compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp, see full log file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt.

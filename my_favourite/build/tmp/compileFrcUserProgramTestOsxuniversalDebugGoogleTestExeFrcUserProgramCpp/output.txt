@@ -1,0 +1,44 @@
+See file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramTestOsxuniversalDebugGoogleTestExeFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramTestOsxuniversalDebugGoogleTestExeFrcUserProgramCpp.
+compiling RobotContainer.cpp failed.
+In file included from /Users/home/FRCProjects/frctest/src/main/cpp/RobotContainer.cpp:9:
+In file included from /Users/home/FRCProjects/frctest/src/main/include/subsystems/SubShooter.h:8:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkMax.h:31:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkBase.h:62:
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/SparkMaxPIDController.h:703:17: warning: 'SetPositionPIDWrappingEnabled' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    REVLibError SetPositionPIDWrappingEnabled(bool enable);
+                ^
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANPIDController.h:586:25: note: overridden virtual function is here
+    virtual REVLibError SetPositionPIDWrappingEnabled(bool enable) = 0;
+                        ^
+In file included from /Users/home/FRCProjects/frctest/src/main/cpp/RobotContainer.cpp:9:
+In file included from /Users/home/FRCProjects/frctest/src/main/include/subsystems/SubShooter.h:8:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkMax.h:31:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkBase.h:62:
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/SparkMaxPIDController.h:713:17: warning: 'SetPositionPIDWrappingMaxInput' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    REVLibError SetPositionPIDWrappingMaxInput(double value);
+                ^
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANPIDController.h:596:25: note: overridden virtual function is here
+    virtual REVLibError SetPositionPIDWrappingMaxInput(double value) = 0;
+                        ^
+In file included from /Users/home/FRCProjects/frctest/src/main/cpp/RobotContainer.cpp:9:
+In file included from /Users/home/FRCProjects/frctest/src/main/include/subsystems/SubShooter.h:8:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkMax.h:31:
+In file included from /Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANSparkBase.h:62:
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/SparkMaxPIDController.h:723:17: warning: 'SetPositionPIDWrappingMinInput' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    REVLibError SetPositionPIDWrappingMinInput(double value);
+                ^
+/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers/rev/CANPIDController.h:606:25: note: overridden virtual function is here
+    virtual REVLibError SetPositionPIDWrappingMinInput(double value) = 0;
+                        ^
+/Users/home/FRCProjects/frctest/src/main/cpp/RobotContainer.cpp:12:10: fatal error: 'subsystems/SubRoller.h' file not found
+#include "subsystems/SubRoller.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings and 1 error generated.
+
+compiling SubIntake.cpp failed.
+/Users/home/FRCProjects/frctest/src/main/cpp/subsystems/SubIntake.cpp:5:10: fatal error: 'subsystems/SubRoller.h' file not found
+#include "subsystems/SubRoller.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+
+Finished compileFrcUserProgramTestOsxuniversalDebugGoogleTestExeFrcUserProgramCpp, see full log file:///Users/home/FRCProjects/frctest/build/tmp/compileFrcUserProgramTestOsxuniversalDebugGoogleTestExeFrcUserProgramCpp/output.txt.

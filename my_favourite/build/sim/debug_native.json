@@ -1,0 +1,68 @@
+[
+  {
+    "type": "native",
+    "name": "frcUserProgram (in project frctest)",
+    "extensions": [
+      {
+        "name": "Sim GUI",
+        "libName": "/Users/home/FRCProjects/frctest/build/install/frcUserProgram/osxuniversal/debug/lib/libhalsim_guid.dylib",
+        "defaultEnabled": true
+      },
+      {
+        "name": "Use Real DriverStation",
+        "libName": "/Users/home/FRCProjects/frctest/build/install/frcUserProgram/osxuniversal/debug/lib/libhalsim_ds_socketd.dylib",
+        "defaultEnabled": false
+      }
+    ],
+    "launchfile": "/Users/home/FRCProjects/frctest/build/install/frcUserProgram/osxuniversal/debug/lib/frcUserProgram",
+    "clang": true,
+    "environment": {},
+    "srcpaths": [
+      "/Users/home/FRCProjects/frctest/src/main/cpp",
+      "/Users/home/FRCProjects/frctest/src/main/include"
+    ],
+    "headerpaths": [
+      "/Users/home/.gradle/caches/transforms-3/12448813ab136b976a1a8edbcc02af33/transformed/wpilibNewCommands-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/2979a2b948fa2cd851ab949741c0b3aa/transformed/REVLib-cpp-2024.2.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/5480a76c887d6f3ea11223a5e31b7865/transformed/REVLib-driver-2024.2.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/3dcc959d9752910019079a600926b547/transformed/wpiapi-cpp-sim-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/c825eab16706408fdfffb4d92f744a5e/transformed/tools-sim-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/b241521cf041204f77cd4e41eefdc0b5/transformed/simTalonSRX-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/868a558b2c2b22c9c4120515558bcf2a/transformed/simTalonFX-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/4f995391337e96e1ed66d6c9f57fe498/transformed/simVictorSPX-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/d3755f54fabb9d70114268c775a7a90a/transformed/simPigeonIMU-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/7398ca81a93d1661695021615e5efdd3/transformed/simCANCoder-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/11ff1e1f1facd524d7282cd221c9c646/transformed/simProTalonFX-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/a7245ad6089acb732e4a4c88907a4dea/transformed/simProCANcoder-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/09ce9512595ab3d6f568f3edf48054b2/transformed/simProPigeon2-24.3.0-headers",
+      "/Users/home/.gradle/caches/transforms-3/8dbd3c3522e2bc2e86a989f3996fbccd/transformed/wpilibc-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/e810e419959e8e46de26db15fe33a26c/transformed/ntcore-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/246e18ba2d76ee272deab274fb44800c/transformed/hal-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/6147b16c7479a6a8a375608ff1de2cdd/transformed/wpimath-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/9eced6444391950f1ba1c693970f54bb/transformed/wpinet-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/38ec42aa152968304d53c489335d9675/transformed/wpiutil-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/d2b28e9e8e55e384491fb7bcaa2dd4f9/transformed/cameraserver-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/8725232feed2e1a08e3a71349a0f7951/transformed/cscore-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/ace71cadf2ab7419f556a91f63a5d680/transformed/apriltag-cpp-2024.3.2-headers",
+      "/Users/home/.gradle/caches/transforms-3/e45ed055524ed9bb6ca551a245745a32/transformed/opencv-cpp-4.8.0-2-headers",
+      "/Users/home/FRCProjects/frctest/src/main/include"
+    ],
+    "libpaths": [
+      "/Users/home/FRCProjects/frctest/build/install/frcUserProgram/osxuniversal/debug/lib",
+      "/Users/home/FRCProjects/frctest/build/install/frcUserProgram/osxuniversal/debug"
+    ],
+    "libsrcpaths": [
+      "/Users/home/.gradle/caches/transforms-3/5493ccc178db22c2378c4dd1e8688a83/transformed/wpilibNewCommands-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/f12d024d102cd1342d4671a75093b845/transformed/wpilibc-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/dc15f79e78d5b60ad9f95b817b6a0132/transformed/ntcore-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/d0c9ce4d5d5f5edeb38eb5eeb7a99615/transformed/hal-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/863bcf5453e200cce851d7f929305632/transformed/wpimath-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/6e4b6faf3349e78926017da98234d551/transformed/wpinet-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/f95409062c244dee72d2108a56981828/transformed/wpiutil-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/7760cdc2adc177b22759a5ab9ab5ea14/transformed/cameraserver-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/3a248861c5ba1d4d8850333ffc7c663c/transformed/cscore-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/3387cd96652c726d2d1ac993ae775964/transformed/apriltag-cpp-2024.3.2-sources",
+      "/Users/home/.gradle/caches/transforms-3/05324c9d67e05e61f30d73a5146d1cb6/transformed/opencv-cpp-4.8.0-2-sources"
+    ]
+  }
+]
