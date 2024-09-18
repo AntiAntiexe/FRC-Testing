@@ -12,6 +12,7 @@
 #include "subsystems/SubIntake.h"
 
 #include "commands/ShootingCommands.h"
+#include "commands/IntakeCommand.h"
 
 RobotContainer::RobotContainer() {
   ConfigureBindings();
@@ -22,6 +23,7 @@ void RobotContainer::ConfigureBindings() {
   _controller.B().WhileTrue(SubIntake::GetInstance().SpinFlywheel());
   _controller.X().OnTrue(SubTurret::GetInstance().TurnTo(30_deg));
   _controller.Y().OnTrue(SubTurret::GetInstance().TurnTo(0_deg));
+  _controller.Y().WhileTrue(icmd::IntakeSequence());
 }
 
 frc2::CommandPtr RobotContainer::GetAutonomousCommand() {

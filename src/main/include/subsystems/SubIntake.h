@@ -10,6 +10,17 @@
 #include "Constants.h"
 #include <frc/DigitalInput.h>
 
+#include <frc/DoubleSolenoid.h>
+#include <frc/simulation/DIOSim.h>
+#include <frc/DigitalInput.h>
+
+#include <frc2/command/SubsystemBase.h>
+#include <rev/CANSparkMax.h>
+#include <frc2/command/commands.h>
+#include <frc/DoubleSolenoid.h>
+#include <frc/DigitalInput.h>
+#include <frc/simulation/DIOSim.h>
+
 class SubIntake : public frc2::SubsystemBase {
  public:
  static SubIntake& GetInstance() {static SubIntake inst; return inst;}
@@ -20,6 +31,11 @@ class SubIntake : public frc2::SubsystemBase {
    */
   void Periodic() override;
   frc2::CommandPtr SpinFlywheel();
+  frc2::CommandPtr ExtendIntake();
+  frc2::CommandPtr RetractIntake();
+
+  
+  
 
 
  private:
@@ -27,4 +43,7 @@ class SubIntake : public frc2::SubsystemBase {
   // declared private and exposed only through public methods.
   rev::CANSparkMax _intakeMotor{canid::rollerMotor, rev::CANSparkLowLevel::MotorType::kBrushless};
   frc::DigitalInput _intakeSensor{doi::intakeDOI};
+  
+  frc::DoubleSolenoid solIntake{pcm1::Pcm1Id, frc::PneumaticsModuleType::REVPH,
+                                pcm1::IntakeExtend, pcm1::IntakeRetract};
 };

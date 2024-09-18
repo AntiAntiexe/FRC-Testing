@@ -4,12 +4,14 @@
 
 #include "subsystems/SubIntake.h"
 #include <frc/smartdashboard/SmartDashboard.h>
+#include <frc/DoubleSolenoid.h>
 
 SubIntake::SubIntake() = default;
 
 // This method will be called once per scheduler run
 void SubIntake::Periodic() {
     frc::SmartDashboard::PutNumber("roller speed", _intakeMotor.Get());
+    frc::SmartDashboard::PutBoolean("Intake Arm Down", solIntake.Get());
 }
 
 frc2::CommandPtr SubIntake::SpinFlywheel(){
@@ -30,5 +32,17 @@ frc2::CommandPtr SubIntake::SpinFlywheel(){
 
     );
 }
+
+// Extend Intake
+frc2::CommandPtr SubIntake::ExtendIntake() {
+  return RunOnce([this] { solIntake.Set(frc::DoubleSolenoid::kForward); });
+}
+
+frc2::CommandPtr SubIntake::RetractIntake() {
+    return RunOnce([this] { solIntake.Set(frc::DoubleSolenoid::kOff); });
+  
+}
+
+
 
 
