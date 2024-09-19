@@ -10,7 +10,7 @@ namespace icmd {
     frc2::CommandPtr IntakeSequence() {
         return Sequence(
             SubIntake::GetInstance().ExtendIntake(),
-            WaitUntil(SubIntake::GetInstance().SpinFlywheel(),
+            SubIntake::GetInstance().SpinFlywheel(),
             SubIntake::GetInstance().RetractIntake()
 
         );

@@ -19,3 +19,7 @@ namespace pcm1 {
     constexpr int Pcm1Id = 22; //same ID as ClimberRightLaserCan
 
 }
+
+namespace pwm {
+    constexpr int LEDS = 0;
+}
